@@ -22,36 +22,36 @@ My primary interest is front-end web development, using languages like TypeScrip
 I look forward to collaborating with like-minded developers in the future and working to make valuable contributions to the industry.
 
 ## Skills
-.NET
-C#
-ASP.NET
-ASP.NET MVC
-ASP.NET Core
-ASP.NET Web API
-SQL Server
-HTML
-HTML5
-AngularJS
-Angular
-TypeScript
-CSS
-JavaScript
-jQuery
-RxJs
-NPM Packages
-Bootstrap
-ADO.NET
-AJAX
-Ionic Framework
-RDBMS
-Xamarin
-Github
-Bitbucket
-Gitlab
-Tortoise SVN
-VSS
-Health Care
-CRM
+.NET,
+C#,
+ASP.NET,
+ASP.NET MVC,
+ASP.NET Core,
+ASP.NET Web API,
+SQL Server,
+HTML,
+HTML5,
+AngularJS,
+Angular,
+TypeScript,
+CSS,
+JavaScript,
+jQuery,
+RxJs,
+NPM Packages,
+Bootstrap,
+ADO.NET,
+AJAX,
+Ionic Framework,
+RDBMS,
+Xamarin,
+Github,
+Bitbucket,
+Gitlab,
+Tortoise SVN,
+VSS,
+Health Care,
+CRM,
 
  📫 How to reach me: 
 - [LinkedIn](https://www.linkedin.com/in/meanstackchahal/)
