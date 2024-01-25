@@ -4,7 +4,7 @@ My name is Loveneet Singh Chahal, and I am an aspiring Full-Stack developer with
 
 ## About me:
 
-I am an Expert in Web Application development with more than 9+ years of experience in working with different technologies from ASP.NET Web Forms, MVC, and Asp.Net Core to Angular-based single-page apps. Managing and coordinating projects across technical platforms and business units
+I am an Expert in Web Application development with more than 9+ years of experience in working with different technologies from ASP.NET Web Forms, MVC, and Asp.Net Core to Angular-based single-page apps. Managing and coordinating projects across technical platforms and business units. I enjoy exploring design patterns and principles in code, as well as in self-expression.
 
 In my free time, you can see me driving or playing with my pets.
 
@@ -51,7 +51,11 @@ Gitlab,
 Tortoise SVN,
 VSS,
 Health Care,
-CRM,
+CRM
+
+### How I work: Forethought and Curiosity 
+
+I remind myself often to revisit my intentions. I work with reusability and readability in mind. I strive to create code that will endure through time. I want the user, be they developer or customer, to feel their needs were intuited. I approach the task at hand with curiosity and humility. This allows me to take roadblocks in stride, and savor opportunities to learn and absorb information which will help me build better next time.
 
  📫 How to reach me: 
 - [LinkedIn](https://www.linkedin.com/in/meanstackchahal/)
