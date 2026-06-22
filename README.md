@@ -4,7 +4,7 @@ My name is Loveneet Singh Chahal, and I am an aspiring Full-Stack developer with
 
 ## About me:
 
-I am an Expert in Web Application development with more than 9+ years of experience in working with different technologies from ASP.NET Web Forms, MVC, and Asp.Net Core to Angular-based single-page apps. Managing and coordinating projects across technical platforms and business units. I enjoy exploring design patterns and principles in code, as well as in self-expression.
+I am an Expert in Web Application development with more than 10+ years of experience in working with different technologies from ASP.NET Web Forms, MVC, and Asp.Net Core to Angular-based single-page apps. Managing and coordinating projects across technical platforms and business units. I enjoy exploring design patterns and principles in code, as well as in self-expression.
 
 In my free time, you can see me driving or playing with my pets.
 
