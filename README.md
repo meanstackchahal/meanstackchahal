@@ -17,7 +17,7 @@
 
 ## 👋 About Me
 
-I'm **Loveneet Singh**, a Full Stack Developer and Tech Consultant with over 10+ years of hands-on experience building scalable applications, architecting cloud solutions, and mentoring development teams. I specialize in the **MEAN/MERN stack** and Microsoft ecosystem (.NET, Azure), creating robust solutions from frontend to backend.
+I'm **Loveneet Singh**, a Full Stack Developer and Tech Consultant with over 12+ years of hands-on experience building scalable applications, architecting cloud solutions, and mentoring development teams. I specialize in the **MEAN/MERN stack** and Microsoft ecosystem (.NET, Azure), creating robust solutions from frontend to backend.
 
 ### 🎯 What I Do
 
@@ -160,8 +160,8 @@ I'm **Loveneet Singh**, a Full Stack Developer and Tech Consultant with over 10+
 ## 🐍 Contribution Snakes
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/meanstackchahal/meanstackchahal/output/github-contribution-grid-snake.svg">
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/meanstackchahal/meanstackchahal/output/github-contribution-grid-snake-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/meanstackchahal/meanstackchahal/8560c18fdf5cf9bf09c021af9649e0b8853a2ec1/output/github-contribution-grid-snake.svg">
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/meanstackchahal/meanstackchahal/8560c18fdf5cf9bf09c021af9649e0b8853a2ec1/output/github-contribution-grid-snake-light.svg">
 </picture>
 
 ---
@@ -208,7 +208,7 @@ If you find my projects helpful or my content valuable:
 - ⭐ Star my repositories
 - 🍴 Fork and contribute
 - 📢 Share with your network
-- ☕ [Buy me a coffee](https://buymeacoffee.com/meanstack)
+- ☕ [Buy me a coffee](https://buymeacoffee.com/meanstackchahal)
 
 ---
 
@@ -222,6 +222,6 @@ If you find my projects helpful or my content valuable:
 
 Made with ❤️ by **Loveneet Singh**
 
-![Last Updated](https://img.shields.io/badge/Last%20Updated-2024-brightgreen?style=flat-square)
+![Last Updated](https://img.shields.io/badge/Last%20Updated-2026-brightgreen?style=flat-square)
 
 </div>
