@@ -1,0 +1,161 @@
+<svg viewBox="0 0 200 400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <style>
+      @keyframes dropDown { 
+        0% { transform: translateY(-200px); opacity: 0; }
+        50% { opacity: 1; }
+        100% { transform: translateY(0); opacity: 1; }
+      }
+      @keyframes swing {
+        0%, 100% { transform: rotateZ(-8deg) translateY(0); }
+        50% { transform: rotateZ(8deg) translateY(0); }
+      }
+      @keyframes gentleSway {
+        0%, 100% { transform: rotateZ(-2deg); }
+        50% { transform: rotateZ(2deg); }
+      }
+      @keyframes shimmerHolo {
+        0% { transform: translateX(-100%) skewX(-20deg); opacity: 0; }
+        50% { opacity: 0.8; }
+        100% { transform: translateX(100%) skewX(-20deg); opacity: 0; }
+      }
+      @keyframes glowPulse {
+        0%, 100% { filter: drop-shadow(0 0 8px #ff1493) drop-shadow(0 0 4px #ff1493); }
+        50% { filter: drop-shadow(0 0 15px #ff1493) drop-shadow(0 0 8px #ff1493); }
+      }
+      
+      .lanyard-container {
+        animation: dropDown 1s ease-out forwards, gentleSway 3s ease-in-out 1.5s infinite;
+        transform-origin: 100px 0;
+      }
+      .badge-card {
+        animation: glowPulse 3s ease-in-out infinite;
+      }
+      .shimmer {
+        animation: shimmerHolo 3s ease-in-out infinite;
+        animation-delay: 0.5s;
+      }
+      .barcode { font-family: 'Code128', monospace; font-size: 8px; fill: #333; letter-spacing: 1px; }
+      .badge-text { font-family: Arial, sans-serif; fill: #fff; font-weight: bold; }
+      .badge-label { font-family: Arial, sans-serif; fill: #aaa; font-size: 6px; }
+    </style>
+    
+    <linearGradient id="strapGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff1493;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#da70d6;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="cardGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f0f1e;stop-opacity:1" />
+    </linearGradient>
+    
+    <radialGradient id="glassShine">
+      <stop offset="0%" style="stop-color:#fff;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#fff;stop-opacity:0" />
+    </radialGradient>
+    
+    <linearGradient id="shimmerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff;stop-opacity:0" />
+      <stop offset="50%" style="stop-color:#fff;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#fff;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main lanyard container with swing physics -->
+  <g class="lanyard-container">
+    <!-- Strap attachment point (top) -->
+    <rect x="85" y="0" width="30" height="15" fill="url(#strapGradient)" rx="2"/>
+    <text x="100" y="10" text-anchor="middle" class="badge-label" font-size="5" fill="#fff">↑ meanstackchahal ↑</text>
+    
+    <!-- Metal clasp (ring/attachment) -->
+    <g>
+      <!-- Outer ring -->
+      <circle cx="100" cy="22" r="12" fill="none" stroke="#d4af37" stroke-width="2"/>
+      <!-- Inner ring -->
+      <circle cx="100" cy="22" r="8" fill="#c4a030" opacity="0.8"/>
+      <!-- Shine on ring -->
+      <circle cx="104" cy="18" r="3" fill="#fff" opacity="0.6"/>
+      <!-- Screw detail -->
+      <line x1="95" y1="22" x2="105" y2="22" stroke="#999" stroke-width="1" opacity="0.5"/>
+      <line x1="100" y1="17" x2="100" y2="27" stroke="#999" stroke-width="1" opacity="0.5"/>
+    </g>
+    
+    <!-- Strap section -->
+    <rect x="75" y="35" width="50" height="60" fill="url(#strapGradient)" rx="4" opacity="0.9"/>
+    <text x="100" y="55" text-anchor="middle" class="badge-text" font-size="10">@meanstack</text>
+    <text x="100" y="68" text-anchor="middle" class="badge-text" font-size="8">Full Stack Dev</text>
+    <text x="100" y="82" text-anchor="middle" class="badge-label" font-size="6" fill="#fff">📍 Digital Nomad</text>
+    
+    <!-- Badge card container -->
+    <g class="badge-card">
+      <!-- Card body -->
+      <rect x="60" y="95" width="80" height="120" fill="url(#cardGradient)" stroke="#ff1493" stroke-width="2" rx="4"/>
+      
+      <!-- Card glass shine overlay -->
+      <ellipse cx="80" cy="110" rx="30" ry="20" fill="url(#glassShine)" opacity="0.5"/>
+      
+      <!-- Avatar circle (face placeholder) -->
+      <g>
+        <circle cx="100" cy="115" r="22" fill="#2a2a3e" stroke="#ff1493" stroke-width="1.5" filter="drop-shadow(0 0 8px #ff1493)"/>
+        <!-- Avatar initials -->
+        <text x="100" y="122" text-anchor="middle" class="badge-text" font-size="14" fill="#ff1493" font-weight="bold">LS</text>
+      </g>
+      
+      <!-- Glowing avatar ring -->
+      <circle cx="100" cy="115" r="25" fill="none" stroke="#ff1493" stroke-width="1" opacity="0.5">
+        <animate attributeName="stroke-dasharray" values="0,157;157,157" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="r" values="25;27;25" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      
+      <!-- Name section -->
+      <text x="100" y="160" text-anchor="middle" class="badge-text" font-size="11" fill="#00ff88">Loveneet Singh</text>
+      <text x="100" y="175" text-anchor="middle" class="badge-label" font-size="7" fill="#a0a0ff">Full Stack Developer</text>
+      
+      <!-- Barcode section -->
+      <g transform="translate(65, 185)">
+        <rect width="70" height="15" fill="#222" rx="1"/>
+        <text x="35" y="11" text-anchor="middle" class="barcode">||||||||||||||||</text>
+        <text x="35" y="24" text-anchor="middle" class="badge-label" font-size="5" fill="#999">GITHUB-2024</text>
+      </g>
+      
+      <!-- Contact badge -->
+      <g transform="translate(65, 210)">
+        <rect width="70" height="12" fill="none" stroke="#ff1493" stroke-width="0.5" rx="2" opacity="0.6"/>
+        <text x="35" y="9" text-anchor="middle" class="badge-label" font-size="6" fill="#ff1493">📧 meanstackchahal</text>
+      </g>
+      
+      <!-- Holographic shimmer sweep -->
+      <rect class="shimmer" x="60" y="95" width="25" height="120" fill="url(#shimmerGradient)" opacity="0" rx="4"/>
+    </g>
+    
+    <!-- Tech stack tags on strap -->
+    <g opacity="0.8" transform="translate(75, 230)">
+      <rect width="50" height="8" fill="#1a1a2e" stroke="#ff1493" stroke-width="0.5" rx="2"/>
+      <text x="25" y="6" text-anchor="middle" class="badge-label" font-size="5" fill="#00ff88">.NET | Azure | React</text>
+    </g>
+    
+    <!-- Certification badges -->
+    <g opacity="0.9">
+      <!-- Badge 1 -->
+      <circle cx="78" cy="250" r="8" fill="#ffd93d" stroke="#fff" stroke-width="0.5"/>
+      <text x="78" y="254" text-anchor="middle" font-size="6" fill="#333" font-weight="bold">★</text>
+      
+      <!-- Badge 2 -->
+      <circle cx="100" cy="250" r="8" fill="#6bcf7f" stroke="#fff" stroke-width="0.5"/>
+      <text x="100" y="254" text-anchor="middle" font-size="6" fill="#fff" font-weight="bold">✓</text>
+      
+      <!-- Badge 3 -->
+      <circle cx="122" cy="250" r="8" fill="#ff6b6b" stroke="#fff" stroke-width="0.5"/>
+      <text x="122" y="254" text-anchor="middle" font-size="6" fill="#fff" font-weight="bold">⚡</text>
+    </g>
+    
+    <!-- Additional decorative elements -->
+    <text x="100" y="290" text-anchor="middle" class="badge-label" font-size="8" fill="#ff1493" font-weight="bold">Developer</text>
+    <text x="100" y="305" text-anchor="middle" class="badge-label" font-size="6" fill="#999">Keep Coding 🚀</text>
+    
+    <!-- Bottom strap end -->
+    <rect x="85" y="320" width="30" height="20" fill="url(#strapGradient)" rx="3" opacity="0.9"/>
+    <text x="100" y="332" text-anchor="middle" class="badge-label" font-size="5" fill="#fff" font-weight="bold">↓ 2024 ↓</text>
+  </g>
+</svg>

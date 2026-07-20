@@ -1,0 +1,147 @@
+<svg viewBox="0 0 400 550" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes slideInBar {
+        from { width: 0; opacity: 0; }
+        to { width: 100%; opacity: 1; }
+      }
+      @keyframes shimmerBar {
+        0%, 100% { opacity: 0.8; }
+        50% { opacity: 1; }
+      }
+      
+      .lang-label { font-family: Arial, sans-serif; font-size: 13px; fill: #00ff88; font-weight: bold; }
+      .lang-percent { font-family: Arial, sans-serif; font-size: 12px; fill: #a0a0a0; }
+      .bar-container { animation: slideInBar 1.2s ease-out forwards; }
+    </style>
+    
+    <linearGradient id="bgGradLang" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a2e;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="barCSharp" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#512da8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7b1fa2;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="barTS" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2196f3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1976d2;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="barReact" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#61dafb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00acc1;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="barJS" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffd700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffb300;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="barSQL" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff5252;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="barNode" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#68a063;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5a9253;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="550" fill="url(#bgGradLang)" rx="10"/>
+  
+  <!-- Title -->
+  <text x="200" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#00ff88">
+    Top Languages
+  </text>
+  
+  <line x1="30" y1="45" x2="370" y2="45" stroke="#ff1493" stroke-width="1" opacity="0.3"/>
+  
+  <!-- C# - 28% -->
+  <g transform="translate(30, 70)">
+    <text y="0" class="lang-label">C#</text>
+    <text x="340" y="0" text-anchor="end" class="lang-percent">28%</text>
+    <g class="bar-container" style="animation-delay: 0.1s;">
+      <rect x="0" y="15" width="300" height="18" fill="#1a1a2e" stroke="#512da8" stroke-width="1" rx="3"/>
+      <rect x="0" y="15" width="84" height="18" fill="url(#barCSharp)" rx="3"/>
+    </g>
+  </g>
+  
+  <!-- TypeScript - 25% -->
+  <g transform="translate(30, 120)">
+    <text y="0" class="lang-label">TypeScript</text>
+    <text x="340" y="0" text-anchor="end" class="lang-percent">25%</text>
+    <g class="bar-container" style="animation-delay: 0.2s;">
+      <rect x="0" y="15" width="300" height="18" fill="#1a1a2e" stroke="#2196f3" stroke-width="1" rx="3"/>
+      <rect x="0" y="15" width="75" height="18" fill="url(#barTS)" rx="3"/>
+    </g>
+  </g>
+  
+  <!-- JavaScript - 18% -->
+  <g transform="translate(30, 170)">
+    <text y="0" class="lang-label">JavaScript</text>
+    <text x="340" y="0" text-anchor="end" class="lang-percent">18%</text>
+    <g class="bar-container" style="animation-delay: 0.3s;">
+      <rect x="0" y="15" width="300" height="18" fill="#1a1a2e" stroke="#ffd700" stroke-width="1" rx="3"/>
+      <rect x="0" y="15" width="54" height="18" fill="url(#barJS)" rx="3"/>
+    </g>
+  </g>
+  
+  <!-- SQL - 12% -->
+  <g transform="translate(30, 220)">
+    <text y="0" class="lang-label">SQL</text>
+    <text x="340" y="0" text-anchor="end" class="lang-percent">12%</text>
+    <g class="bar-container" style="animation-delay: 0.4s;">
+      <rect x="0" y="15" width="300" height="18" fill="#1a1a2e" stroke="#ff6b6b" stroke-width="1" rx="3"/>
+      <rect x="0" y="15" width="36" height="18" fill="url(#barSQL)" rx="3"/>
+    </g>
+  </g>
+  
+  <!-- Node.js - 10% -->
+  <g transform="translate(30, 270)">
+    <text y="0" class="lang-label">Node.js</text>
+    <text x="340" y="0" text-anchor="end" class="lang-percent">10%</text>
+    <g class="bar-container" style="animation-delay: 0.5s;">
+      <rect x="0" y="15" width="300" height="18" fill="#1a1a2e" stroke="#68a063" stroke-width="1" rx="3"/>
+      <rect x="0" y="15" width="30" height="18" fill="url(#barNode)" rx="3"/>
+    </g>
+  </g>
+  
+  <!-- React - 7% -->
+  <g transform="translate(30, 320)">
+    <text y="0" class="lang-label">React</text>
+    <text x="340" y="0" text-anchor="end" class="lang-percent">7%</text>
+    <g class="bar-container" style="animation-delay: 0.6s;">
+      <rect x="0" y="15" width="300" height="18" fill="#1a1a2e" stroke="#61dafb" stroke-width="1" rx="3"/>
+      <rect x="0" y="15" width="21" height="18" fill="url(#barReact)" rx="3"/>
+    </g>
+  </g>
+  
+  <!-- Divider -->
+  <line x1="30" y1="380" x2="370" y2="380" stroke="#ff1493" stroke-width="1" opacity="0.3"/>
+  
+  <!-- Stats info -->
+  <g transform="translate(30, 410)">
+    <circle cx="0" cy="0" r="4" fill="#00ff88"/>
+    <text x="15" y="4" font-family="Arial, sans-serif" font-size="12" fill="#00ff88">Most Used: C# & TypeScript</text>
+  </g>
+  
+  <g transform="translate(30, 445)">
+    <circle cx="0" cy="0" r="4" fill="#da70d6"/>
+    <text x="15" y="4" font-family="Arial, sans-serif" font-size="12" fill="#da70d6">Full Stack Capabilities</text>
+  </g>
+  
+  <g transform="translate(30, 480)">
+    <circle cx="0" cy="0" r="4" fill="#9370db"/>
+    <text x="15" y="4" font-family="Arial, sans-serif" font-size="12" fill="#9370db">Polyglot Developer</text>
+  </g>
+  
+  <!-- Footer -->
+  <text x="200" y="530" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">
+    Based on public repositories • All languages combined
+  </text>
+</svg>

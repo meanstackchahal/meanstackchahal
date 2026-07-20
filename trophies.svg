@@ -1,0 +1,162 @@
+<svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes popIn {
+        0% { transform: scale(0) rotate(-180deg); opacity: 0; }
+        100% { transform: scale(1) rotate(0deg); opacity: 1; }
+      }
+      @keyframes glowPulse {
+        0%, 100% { filter: drop-shadow(0 0 6px #ff1493); }
+        50% { filter: drop-shadow(0 0 15px #ff1493); }
+      }
+      @keyframes shimmerSweep {
+        0% { transform: translateX(-100%) skewX(-20deg); opacity: 0; }
+        50% { opacity: 0.8; }
+        100% { transform: translateX(100%) skewX(-20deg); opacity: 0; }
+      }
+      @keyframes bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-5px); }
+      }
+      
+      .trophy-cell { animation: popIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards; }
+      .trophy-icon { animation: glowPulse 2s ease-in-out infinite; }
+      .shimmer { animation: shimmerSweep 3s ease-in-out infinite; }
+      .trophy-rank { animation: bounce 2s ease-in-out infinite; }
+      .trophy-text { font-family: Arial, sans-serif; fill: #fff; font-weight: bold; }
+      .trophy-label { font-family: Arial, sans-serif; font-size: 11px; fill: #a0a0a0; }
+    </style>
+    
+    <linearGradient id="bgGradTrophy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a2e;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="shimmerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff;stop-opacity:0" />
+      <stop offset="50%" style="stop-color:#fff;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#fff;stop-opacity:0" />
+    </linearGradient>
+    
+    <linearGradient id="trophyGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd700;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ffb300;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff9800;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="500" height="400" fill="url(#bgGradTrophy)" rx="10"/>
+  
+  <!-- Title -->
+  <text x="250" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#00ff88">
+    🏆 Achievements & Trophies
+  </text>
+  
+  <!-- Trophy Cell 1: Top 1% Developer -->
+  <g class="trophy-cell" style="animation-delay: 0.1s;">
+    <rect x="20" y="60" width="140" height="140" fill="#1a1a2e" stroke="#ff1493" stroke-width="2" rx="8" opacity="0.8"/>
+    <!-- Trophy icon background -->
+    <circle cx="90" cy="95" r="35" fill="#2a2a3e" opacity="0.6"/>
+    <!-- Trophy icon -->
+    <g class="trophy-icon" transform="translate(90, 95)">
+      <path d="M -8,-15 L -12,-5 Q -12,10 0,15 Q 12,10 12,-5 L 8,-15 Z" fill="url(#trophyGold)" stroke="#ff1493" stroke-width="1"/>
+      <circle cx="0" cy="-8" r="12" fill="none" stroke="url(#trophyGold)" stroke-width="2"/>
+    </g>
+    <!-- Shimmer effect -->
+    <rect class="shimmer" x="20" y="60" width="140" height="140" fill="url(#shimmerGrad)" rx="8"/>
+    <!-- Trophy rank -->
+    <g class="trophy-rank" transform="translate(90, 135)">
+      <circle cx="0" cy="0" r="10" fill="#ff1493"/>
+      <text x="0" y="4" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">S</text>
+    </g>
+    <text x="90" y="175" text-anchor="middle" class="trophy-text" font-size="12">Top 1%</text>
+    <text x="90" y="190" text-anchor="middle" class="trophy-label">Developer</text>
+  </g>
+  
+  <!-- Trophy Cell 2: 500+ Stars -->
+  <g class="trophy-cell" style="animation-delay: 0.2s;">
+    <rect x="180" y="60" width="140" height="140" fill="#1a1a2e" stroke="#da70d6" stroke-width="2" rx="8" opacity="0.8"/>
+    <circle cx="250" cy="95" r="35" fill="#2a2a3e" opacity="0.6"/>
+    <g class="trophy-icon" transform="translate(250, 95)">
+      <path d="M 0,-12 L 3,-3 L 12,-1 L 5,5 L 7,14 L 0,10 L -7,14 L -5,5 L -12,-1 L -3,-3 Z" fill="#ffb300" stroke="#da70d6" stroke-width="1"/>
+    </g>
+    <rect class="shimmer" x="180" y="60" width="140" height="140" fill="url(#shimmerGrad)" rx="8" style="animation-delay: 1.5s;"/>
+    <g class="trophy-rank" transform="translate(250, 135)">
+      <circle cx="0" cy="0" r="10" fill="#da70d6"/>
+      <text x="0" y="4" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">A</text>
+    </g>
+    <text x="250" y="175" text-anchor="middle" class="trophy-text" font-size="12">500+ ⭐</text>
+    <text x="250" y="190" text-anchor="middle" class="trophy-label">Stardom</text>
+  </g>
+  
+  <!-- Trophy Cell 3: 10+ Years -->
+  <g class="trophy-cell" style="animation-delay: 0.3s;">
+    <rect x="340" y="60" width="140" height="140" fill="#1a1a2e" stroke="#9370db" stroke-width="2" rx="8" opacity="0.8"/>
+    <circle cx="410" cy="95" r="35" fill="#2a2a3e" opacity="0.6"/>
+    <g class="trophy-icon" transform="translate(410, 95)">
+      <circle cx="-3" cy="0" r="5" fill="#9370db" stroke="#fff" stroke-width="1"/>
+      <circle cx="3" cy="0" r="5" fill="#9370db" stroke="#fff" stroke-width="1"/>
+      <path d="M -6,8 Q 0,12 6,8" fill="none" stroke="#9370db" stroke-width="2"/>
+    </g>
+    <rect class="shimmer" x="340" y="60" width="140" height="140" fill="url(#shimmerGrad)" rx="8" style="animation-delay: 3s;"/>
+    <g class="trophy-rank" transform="translate(410, 135)">
+      <circle cx="0" cy="0" r="10" fill="#9370db"/>
+      <text x="0" y="4" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">S</text>
+    </g>
+    <text x="410" y="175" text-anchor="middle" class="trophy-text" font-size="12">10+ Yrs</text>
+    <text x="410" y="190" text-anchor="middle" class="trophy-label">Experience</text>
+  </g>
+  
+  <!-- Trophy Cell 4: 100+ Projects -->
+  <g class="trophy-cell" style="animation-delay: 0.4s;">
+    <rect x="20" y="220" width="140" height="140" fill="#1a1a2e" stroke="#00ff88" stroke-width="2" rx="8" opacity="0.8"/>
+    <circle cx="90" cy="255" r="35" fill="#2a2a3e" opacity="0.6"/>
+    <g class="trophy-icon" transform="translate(90, 255)">
+      <rect x="-8" y="-8" width="6" height="6" fill="#00ff88" stroke="#fff" stroke-width="0.5"/>
+      <rect x="2" y="-8" width="6" height="6" fill="#00ff88" stroke="#fff" stroke-width="0.5"/>
+      <rect x="-8" y="2" width="6" height="6" fill="#00ff88" stroke="#fff" stroke-width="0.5"/>
+      <rect x="2" y="2" width="6" height="6" fill="#00ff88" stroke="#fff" stroke-width="0.5"/>
+    </g>
+    <rect class="shimmer" x="20" y="220" width="140" height="140" fill="url(#shimmerGrad)" rx="8" style="animation-delay: 1s;"/>
+    <g class="trophy-rank" transform="translate(90, 295)">
+      <circle cx="0" cy="0" r="10" fill="#00ff88"/>
+      <text x="0" y="4" text-anchor="middle" font-size="14" font-weight="bold" fill="#000">A</text>
+    </g>
+    <text x="90" y="335" text-anchor="middle" class="trophy-text" font-size="12">100+ 🚀</text>
+    <text x="90" y="350" text-anchor="middle" class="trophy-label">Projects</text>
+  </g>
+  
+  <!-- Trophy Cell 5: 50+ Technologies -->
+  <g class="trophy-cell" style="animation-delay: 0.5s;">
+    <rect x="180" y="220" width="140" height="140" fill="#1a1a2e" stroke="#ff9800" stroke-width="2" rx="8" opacity="0.8"/>
+    <circle cx="250" cy="255" r="35" fill="#2a2a3e" opacity="0.6"/>
+    <g class="trophy-icon" transform="translate(250, 255)">
+      <path d="M -10,-5 L -5,-10 L 0,-5 L 5,-10 L 10,-5 L 5,0 L 10,5 L 5,10 L 0,5 L -5,10 L -10,5 L -5,0 Z" fill="#ff9800" stroke="#fff" stroke-width="1"/>
+    </g>
+    <rect class="shimmer" x="180" y="220" width="140" height="140" fill="url(#shimmerGrad)" rx="8" style="animation-delay: 2.5s;"/>
+    <g class="trophy-rank" transform="translate(250, 295)">
+      <circle cx="0" cy="0" r="10" fill="#ff9800"/>
+      <text x="0" y="4" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">S</text>
+    </g>
+    <text x="250" y="335" text-anchor="middle" class="trophy-text" font-size="12">50+</text>
+    <text x="250" y="350" text-anchor="middle" class="trophy-label">Tech Stack</text>
+  </g>
+  
+  <!-- Trophy Cell 6: Developer of the Year -->
+  <g class="trophy-cell" style="animation-delay: 0.6s;">
+    <rect x="340" y="220" width="140" height="140" fill="#1a1a2e" stroke="#ff1493" stroke-width="2" rx="8" opacity="0.8"/>
+    <circle cx="410" cy="255" r="35" fill="#2a2a3e" opacity="0.6"/>
+    <g class="trophy-icon" transform="translate(410, 255)">
+      <path d="M 0,-12 L 8,-4 L 12,4 L 4,8 L -4,8 L -12,4 L -8,-4 Z" fill="#ff1493" stroke="#ffd700" stroke-width="1"/>
+      <circle cx="0" cy="0" r="3" fill="#ffd700"/>
+    </g>
+    <rect class="shimmer" x="340" y="220" width="140" height="140" fill="url(#shimmerGrad)" rx="8" style="animation-delay: 0.5s;"/>
+    <g class="trophy-rank" transform="translate(410, 295)">
+      <circle cx="0" cy="0" r="10" fill="#ff1493"/>
+      <text x="0" y="4" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">A</text>
+    </g>
+    <text x="410" y="335" text-anchor="middle" class="trophy-text" font-size="12">2024</text>
+    <text x="410" y="350" text-anchor="middle" class="trophy-label">Excellence</text>
+  </g>
+</svg>

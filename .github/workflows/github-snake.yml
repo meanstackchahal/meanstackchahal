@@ -1,0 +1,65 @@
+name: Generate GitHub Contribution Snake Animation
+
+on:
+  schedule:
+    # Run every day at 2 AM UTC
+    - cron: "0 2 * * *"
+  # Allow manual triggering from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  generate-snake:
+    name: Build GitHub Contribution Snake
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate Snake Animation (Dark Mode)
+        uses: Platane/snk@v3
+        with:
+          # GitHub username
+          github_user_name: meanstackchahal
+          # SVG output path
+          svg_out_path: output/github-contribution-grid-snake.svg
+          # Animation options
+          animations: true
+          # Custom colors for dark mode - Pink/Purple theme
+          snake_color: "ff1493"
+          # Dark background
+          background_color: "0a0a1a"
+
+      - name: Generate Snake Animation (Light Mode)
+        uses: Platane/snk@v3
+        with:
+          github_user_name: meanstackchahal
+          svg_out_path: output/github-contribution-grid-snake-light.svg
+          animations: true
+          snake_color: "e91e63"
+          background_color: "ffffff"
+
+      - name: Commit and Push Changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: "🐍 Update GitHub contribution snake animation"
+          branch: output
+          default_author: github_actions
+          pathspec_error_handling: ignore
+          add: "output/"
+
+      - name: Create/Update output Branch
+        if: always()
+        run: |
+          git config --global user.email "github-actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git checkout --orphan output 2>/dev/null || git checkout output
+          git rm -rf . 2>/dev/null || true
+          mkdir -p output
+          git add .
+          git commit --allow-empty -m "Initial output branch for snake animation" 2>/dev/null || true
+          git push -u origin output --force 2>/dev/null || true
