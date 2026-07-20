@@ -127,7 +127,7 @@
   <!-- Stats info -->
   <g transform="translate(30, 410)">
     <circle cx="0" cy="0" r="4" fill="#00ff88"/>
-    <text x="15" y="4" font-family="Arial, sans-serif" font-size="12" fill="#00ff88">Most Used: C# & TypeScript</text>
+    <text x="15" y="4" font-family="Arial, sans-serif" font-size="12" fill="#00ff88">Most Used: C# and TypeScript</text>
   </g>
   
   <g transform="translate(30, 445)">

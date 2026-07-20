@@ -50,7 +50,7 @@
   
   <!-- Title -->
   <text x="250" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#00ff88">
-    🏆 Achievements & Trophies
+    🏆 Achievements and Trophies
   </text>
   
   <!-- Trophy Cell 1: Top 1% Developer -->
@@ -127,7 +127,6 @@
     <text x="90" y="350" text-anchor="middle" class="trophy-label">Projects</text>
   </g>
   
-  <!-- Trophy Cell 5: 50+ Technologies -->
   <g class="trophy-cell" style="animation-delay: 0.5s;">
     <rect x="180" y="220" width="140" height="140" fill="#1a1a2e" stroke="#ff9800" stroke-width="2" rx="8" opacity="0.8"/>
     <circle cx="250" cy="255" r="35" fill="#2a2a3e" opacity="0.6"/>
